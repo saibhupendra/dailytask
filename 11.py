@@ -1,3 +1,4 @@
-n=int(input("enter a number:"))
-for i in range(1,11):
-    print(n,'x',i,'=',n*i)
+##Python program to concatenate two strings without using join() method. 
+s="learning"
+s1="pyhton"
+print(s+s1)
