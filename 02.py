@@ -1,7 +1,7 @@
-##Python Program to check if two Strings are Anagram. 
-s="nani"
-s1="nagu"
-if set(s)==set(s1) and len(s)==len(s1):
-    print("anagram")
-else:
-    print("not")    
+##Write a Python program to create a list of 5 integers and print the sum of all elements in the list.
+l=[l for l in range(1,5+1)]
+print(l)
+sum=0
+for i in l:
+    sum+=i
+print(sum) 
