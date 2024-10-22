@@ -74,7 +74,7 @@ else:
 # 
 def highest_frequency(l):
     max_count = 0
-    most_frequent = None
+    most_frequent = 0
     for i in l:
         count = l.count(i)
         if count > max_count:
@@ -82,5 +82,5 @@ def highest_frequency(l):
             most_frequent = i
     return most_frequent
 
-s=highest_frequency([1, 3, 5, 2, 6, 2, 7, 2, 8])
+s=highest_frequency([1, 3, 5, 2,3, 6,3, 2, 7, 2, 8,2])
 print(s)
