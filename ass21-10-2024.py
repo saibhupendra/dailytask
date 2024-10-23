@@ -1,3 +1,4 @@
+
 ## Functions:
 ##       >>It is a block of reuseble code excectes whenever we call the functions
 ##      >> we are passing a data to this functions as an arguments
@@ -84,3 +85,4 @@ def highest_frequency(l):
 
 s=highest_frequency([1, 3, 5, 2,3, 6,3, 2, 7, 2, 8,2])
 print(s)
+
