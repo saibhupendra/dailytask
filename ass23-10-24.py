@@ -35,15 +35,7 @@ def name (name2,name1,name3):
     return (name1+name2+name3)
 print(name("nani ","rama ","nagu"))
 
-#output1
-#nani
-#nagu
-#nani nagu
-#output2
-#rama
-#nani
-#nagu
-#rama nani nagu
+
 
 
 #keyword arguments:
@@ -99,26 +91,18 @@ print(factorial(2, 4, 5))
 #Variable keyword arguments allow you to pass a variable number of keyword arguments to a function
 # it will store the elemnts in the key value pari
 
-def vegetables(**l):
+def Vegetables(**l):
     for k,v in l.items():
         print(k,"-",v)
     print(sum(l.values()))
 
-vegetables(carrot=45,beetroot=50,cucumber=30,onion=70,tamota=60)
+Vegetables(carrot=45,beetroot=50,cucumber=30,onion=70,tamota=60)
 
 
 ## default arguments:
 # Default arguments allow you to specify default values for function parameters
 
-"""def append_to(a,l=None):
-    l=[]
-    if l is None:
-        l.append(a)
-    return l
-print(a.append_to(1))
-print(a.append_to(2)) 
-print(a.append_to(3))
-print(a.append_to(4)) """   
+
 
 def append_to(a, l=None):
     if l is None:
@@ -130,7 +114,6 @@ print(append_to(1,l1))
 print(append_to(2,l1))  
 print(append_to(3,l1))  
 print(append_to(4,l1))  
-
 
 
 
