@@ -4,7 +4,7 @@
 # 1.positional arguments
 ##   >> positional arguments are values you pass to a function
 ##   >> the first argument goes to the first parameter and the second to the second parameter
-##  >> it will the value based on the postion of given arguments
+##  >> it will take the value based on the postion of given arguments
 
 def mul(a,b):
     print(a)
