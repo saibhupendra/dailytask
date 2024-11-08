@@ -124,6 +124,42 @@ print(result)
 
 
 
+#even and odd number:
+int(input("enter yor number"))
+for i in range(1,l+1):
+    if i%2==0:
+        print("even number")
+    elif i%2==1:
+        print("odd number")    
+
+
+
+#prime number:
+n=int(input("enter your number:"))
+for i in range (2,n+1):
+    if n%i==0:
+        break
+if(i==n):
+    print(l=n,"prime")
+else:
+    print(n,"not prime")  
+
+
+#first 100 prime number:
+
+n=int(input("enter your number:"))
+for x in range(2,n+1):
+    for  y in range (2,x):
+        if(x%y==0):
+            break
+
+if(x==y):
+    print(x)    
+
+
+
+
+
 
 
 
@@ -159,8 +195,8 @@ print(l)
 #
 #list comprehesion: convertering a  large program into single line
 # 
-l=[x for x in range(1,11)]
-print(l) 
+"""l=[x for x in range(1,11)]
+print(l) """
 #
 #
 #
@@ -170,9 +206,9 @@ print(l)
 #accessing of tuple():
 # >>we can acess by using index and sciling
 #
-t=(1,2,3,4,5,6)
+"""t=(1,2,3,4,5,6)
 print(t[2])
-print(t[2:5])
+print(t[2:5])"""
 #
 
 ## methode of tuple():
@@ -193,12 +229,12 @@ print(t[2:5])
 #    >> by using typecasting
 
 
-t=(1,2,3,4,5,6)
+"""t=(1,2,3,4,5,6)
 l=list(t)
 l.append(7)
 print(l)
 t=tuple(l)
-print(t)
+print(t)"""
 
 
 
@@ -211,15 +247,15 @@ print(t)
 
 ## adding element to set:
 #add()
-s={1,2,3,4}
+"""s={1,2,3,4}
 s.add(7)
-print(s)
+print(s)"""
 
 #update()
-s=set()
+"""s=set()
 l=[1,2,3]
 s.update(l)
-print(l)
+print(l)"""
 
 ##removing of elements:
 # 
@@ -231,22 +267,22 @@ print(l)
 #     >>it will add two set elements without dupliates (s.union(s1))
 ## intersection():
 #    >> it will return only common elements in the both the sets
-s={1,2,3,4,5}
+"""s={1,2,3,4,5}
 s1={1,3,6,7,8,9}
-print(s.intersection(s1))  #output {1, 3}
+print(s.intersection(s1))"""  #output {1, 3}
 #
 #difference():
 #     >> it will return sl elements which are not present in s2
-s={1,2,3,4,5}
+"""s={1,2,3,4,5}
 s1={1,3,6,7,8,9}
-print(s.difference(s1))   #output: {2, 4, 5}
+print(s.difference(s1))"""   #output: {2, 4, 5}
 
 ##symetric_difference():
 #     >>it will return both s1 and s2 which are not present in both the sets
-s={1,2,3,4,5}
+"""s={1,2,3,4,5}
 s1={1,3,6,7,8,9}
 print(s.symmetric_difference(s1))   #output:   {2, 4, 5, 6, 7, 8, 9}
-#
+#"""
 
 
 
@@ -260,14 +296,14 @@ print(s.symmetric_difference(s1))   #output:   {2, 4, 5, 6, 7, 8, 9}
 #       d={}
 #       print(type(d))
 # 
-d = {"name": "preethi", "age": 30, True: "some_value"}
-print(d)
+#d = {"name": "preethi", "age": 30, True: "some_value"}
+#print(d)
 
 #adding element to the dictionary:
-dict={}
+"""dict={}
 dict["name"]="nani"
 dict["age"]=30
-print(dict)
+print(dict)"""
 
 """dict={}
 for i in range (3):
@@ -286,7 +322,7 @@ print(dict)"""
 ###
 ##accesing of elements:
 #print(dict("key"))
-print(dict.get("key"))
+#"print(dict.get("key"))"
 
 ##items:
 #    >> we get all elmemts in the dict
@@ -316,6 +352,127 @@ print(dict.get("key"))
 
 
 
+#function:
+#      >>it is a block of reusable code excecutes whenever we call the function
+#      >>we are passsing a data to this function as an argument
+#  >buit-in-function():
+#             >>len(),min(),max(),print(),count(),int()
+
+
+def mark(m, p, c, e, tm):
+    total = m + p + c + e
+    print("Total Marks:", total)
+    percentage = (total / tm) * 100
+    print( percentage)
+
+
+m = 20
+p = 30
+c = 40
+e = 20
+tm = 400
+mark(m, p, c, e, tm)   # Call the function with correct arguments
+
+
+
+#  >customised function:
+#            >>map:based on the given condtion it will return the new list
+
+
+def sqr(l):
+    return l*2
+l=[1,2,3,4,5]
+m=map(sqr,l)
+print(list(m))
+
+
+#            >>recursive:the function that call it self
+
+
+
+
+
+
+#          >>lamdba:>> Lambda functions in Python are small
+#                        >>easy to read
+#                     >>  itcan take any number of arguments but can only have one expression
+#               syntax : >> lamdba argument : expression
+
+#    
+#        >>filter: it will filter the function and check the sequence of the list
+#               >>syntax: filter(function,sequence)
+
+
+#type of argurment:
+#     argument: the value which we pass to the function when we call it
+
+## positional argument:  it will taking values based on the position
+
+## keyword argument: we have to pass the value to a function with the parameter name
+
+##variable lenght argument: it will passs variable no.of argument to the function
+
+## variable keyword lenght argument: it will pass variable no.of keyword argument to the function
+#                                >>> it will store in the from of dictinary
+
+
+## default argument: it will you to specific defulat value for function parameter
+
+
+
+##modules: it is a collections of variables ,class and function
+#          >> each and every .py extension file is one module
+
+##     >>customised modules
+#      >>builtin modules:
+#               >> math,datatime,random,fonktools
+
+
+## we can access by using "import"
+# we can take the print(dir(dtattime)) we get some buitin fuction
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# packages:the collection of modules
+#            >>modulea :collection of class,variable,functions
+#           >>function: reusable block of code
+# 
+#  we can access the package to other module
+#  but we cannot access the package to package
+# 
+# 
+# 
+# 
+# 
+# 
+# opps:(Object-Oriented Programming) in Python is a programming paradigm 
+#             that uses "objects" and "classes" to model real-world entities and behaviors
+#
+#  class :it is bule print 
+#  object:realtime entity of a class
+#  object refrence variable: it is a variable that points to an object, 
+#                                  rather than holding the object itself.
+#
+#constructor: it is a special method in a class that is called when an instnace of the class is created
+#  
+#         constructor                                      method
+#    >>assiging data to variable              >>reuseble block of code
+#    >>it will excute when we call            >> it excecute when we create an object
+#    >>excecute number of times               >>excecute only once
+#
+#
+# self: it is keyword
+#     >>it is customised keyword that passes as first parameter of the constructor
+#      >>it will allways pointing to the object
+# 
+# 
+#  
 ## varuables in oops:
 #  types of variables:
 #         >>instance variable
@@ -323,13 +480,78 @@ print(dict.get("key"))
 #             1.variable that cajnges from objext to object
 #             2.it is creted by self keyword
 #             3.we can create instance variable inside of constructor and instance methode
+#        >accessing :
+#             1.we can access instnace variable class by using self keyword
+#             2.we can access outside of the class using "orv"
+#
+#>static variable:
+#       >>declartion:
+#          1.it is not changing from object to object
+#          2.we can declare a stastic varable inside the class  directly
+#          3. inside the constructor instnace method using classname
+#          4.outside of class using class name
+#          5.inside the class method using cls variable
+# 
+#      >>accessing:
+#          1.using class name we can access inside the constructor and instance method
+#          2.outside of a class using classname and orv
+#          3.inside of the class method using class variable
 #        
 #
+#>>local variable :it will allowed with in particual function
+#     >>we cannot access outside the class or function
+#   
+#     declartion:we are declaring thses local variable directly inside of static method
+
+
+##method in oop:
+#  instance method:
+#         1.we are declaring and accessing a instnace variable inside a method
+##        2.while declaring instance methode have to pass self as a first parameter
+#         3.we can access these instnace method using orv or classname
+#           
+# class methode:
+#       1.inside the class method have to use only stastic variable
+#       2.while declaring class method have to pass @classmethod
+#       3.while declaring class method have to pass cls as first parameter
+#       4.using cls keyword we can declare and can access the data inside class method
+# 
+# 
+# static method:
+#        1.we are not using instnace and stastic variable
+#        2.we are not passing any parameter like self,cls
+#        3. have to pass @staticmethod decorate
+#        4.we can access static method using class name and cls variable
+# 
+# 
+# 
+# 
+# 
+# 
+# inheritance   :access of properties and behaviors fron one class to other class
+#         >>like parents class to child class
+# 
+# types of inheritance:
+#      single: inheriting properties and behaviors from only one class
 #
-#
-#
-#
-##
-#            >>static variable
-#             >>local variable
+# 
+#      nultiple: inheriting properties and behaviors from multiple class to single class at a same class
+# 
+# 
+#      mulitlevel:inherting properties and behaviors from mulitlevel class to single class
+# 
+# 
+#     hierarchical: single class to two child class inherting properties and method 
+#                     from single class to mulitple class 
+# 
+# 
+# 
+# 
+#      hybrid: using more than one type of inheritance inside the class
+# 
+# 
+# 
+# 
+# 
+#       
 #  
