@@ -93,10 +93,24 @@ class bank:
         print(self.address)
 
 class person(bank):
-    def __init__(self,name)
+    def __init__(self,name):
 
 
-                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
