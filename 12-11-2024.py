@@ -285,12 +285,12 @@ bike.display()
 
 
 
-class Device:
+"""class Device:
     def __init__(self, name):
         self.name = name
 
     def display(self):
-        print(f"Device Name: {self.name}")
+        print(self.name)
 
 
 class Phone(Device):
@@ -310,7 +310,7 @@ class Tablet(Device):
 
     def display(self):
         super().display()
-        print(f"Screen Size: {self.screen_size} inches")
+        print(self.screen_size)
 
 class Smartphone(Phone, Tablet):
     def __init__(self, name, phone_number, screen_size, os):
@@ -332,7 +332,7 @@ smartphone = Smartphone("iPhone", "987-654-3210", 6.1, "iOS")
 phone.display()
 tablet.display()
 smartphone.display()
-
+"""
 
 #6.Basic Inheritance
 #Problem Statement: Create a class Person with attributes: name and age. 
